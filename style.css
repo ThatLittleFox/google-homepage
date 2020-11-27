@@ -3,7 +3,7 @@ html {
     min-height: 100%;
 }
 
-#navbar {
+#navbar{
     display: grid;
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
     grid-template-rows: 50px;
