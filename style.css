@@ -91,10 +91,10 @@ a {
 
 #footer {
     display: grid;
-    grid-template-columns: 100px 100px 100px 300px 300px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 1fr 100px 100px 100px;
     grid-template-rows: 50px;
     grid-template-areas:
-    "advertising business how-search-works carbon-leaf-icon carbon-neutral privacy terms settings";
+    "advertising business how-search-works flexboxx privacy terms settings";
 }
 
 #advertising {
