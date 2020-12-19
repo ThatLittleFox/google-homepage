@@ -114,7 +114,7 @@ a {
 }
 #carbon-leaf-icon {
     grid-area: carbon-leaf-icon;
-    justify-self: center;
+    justify-self: end;
     align-self: center;
 }
 #carbon-neutral {
