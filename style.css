@@ -91,6 +91,6 @@ a {
 
 #footer {
     display: grid;
-    grid-template-columns: 100px 100px 100px 1fr  10px 100px 1fr 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 300px 5px 100px 300px 100px 100px 100px;
 
 }
