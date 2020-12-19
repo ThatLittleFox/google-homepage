@@ -89,3 +89,8 @@ a {
 }
 /*Footer section*/
 
+#footer {
+    display: grid;
+    grid-template-columns: 100px 100px 100px 1fr  10px 100px 1fr 100px 100px 100px;
+
+}
