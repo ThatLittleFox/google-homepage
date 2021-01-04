@@ -6,7 +6,7 @@ html {
 #navbar {
     display: grid;
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
-    grid-template-rows: 70px;    
+    grid-template-rows: 40px;    
     grid-template-areas: 
     "about store . gmail images menu sign-in";
 }
@@ -67,10 +67,27 @@ a {
     align-self: end; 
 }
 
+
 #search {
     grid-area: search;
-    height: 30px;
+    height: 35px;
     align-self: center;
+    width: 90%;
+    justify-self: center;
+    border: 0.5px, solid, rgb(48, 47, 47);
+    border-radius: 30px;
+}
+
+input {
+    direction: ltr; 
+    text-indent: 25px
+}
+
+#search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+#search:focus {
+  box-shadow: 1px 1px 5px grey;
 }
 
 #flexbox {
@@ -81,20 +98,53 @@ a {
 
 }
 #search-button {
-    grid-area: search-button;
-}
-    
-#lucky-search {
+    font-family: 'Roboto', sans-serif;
     grid-area: lucky-search;
+    border: none;
+    font-size: 15px;
+    background-color: whitesmoke;
+    color: #0f0f0fe6;
+    margin-right: 25px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
 }
+
+#search-button:hover {
+    color: black;
+    border: 1px solid, black;
+    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.856);
+}
+
+#lucky-search {
+    font-family: 'Roboto', sans-serif;
+    grid-area: lucky-search;
+    border: none;
+    font-size: 15px;
+    background-color: whitesmoke;
+    color: #0f0f0fe6;
+    margin-right: 25px;
+    padding: 7px 15px 7px 15px;
+    border-radius: 3px;
+}
+
+#lucky-search:hover {
+    color: black;
+    border: 1px solid, black;
+    box-shadow: 1px 1px 1px rgba(128, 128, 128, 0.856);
+}
+
 /*Footer section*/
 
 #footer {
     display: grid;
-    grid-template-columns: 100px 100px 100px 1fr 100px 100px 100px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    grid-template-columns: 100px 100px 100px 1fr 70px 70px 70px;
     grid-template-rows: 50px;
     grid-template-areas:
-    "advertising business how-search-works flexboxx privacy terms settings";
+    "advertising business how-search-works . privacy terms settings";
 }
 
 #advertising {
@@ -109,16 +159,6 @@ a {
 }
 #how-search-works {
     grid-area: how-search-works;
-    justify-self: center;
-    align-self: center;
-}
-#carbon-leaf-icon {
-    grid-area: carbon-leaf-icon;
-    justify-self: end;
-    align-self: center;
-}
-#carbon-neutral {
-    grid-area: carbon-neutral;
     justify-self: center;
     align-self: center;
 }
