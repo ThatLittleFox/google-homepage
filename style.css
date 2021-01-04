@@ -18,6 +18,10 @@ a {
     font-size: 12px;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
 #about{
     grid-area: about;
     justify-self: center;
@@ -136,43 +140,57 @@ input {
 /*Footer section*/
 
 #footer {
+    border-top: solid 1px rgb(187, 187, 187);
+    background-color: rgb(240, 240, 240);
     display: grid;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    grid-template-columns: 100px 100px 100px 1fr 70px 70px 70px;
-    grid-template-rows: 50px;
+    grid-template-columns: 100px 100px 170px 1fr 70px 70px 70px;
+    grid-template-rows: 40px;
     grid-template-areas:
     "advertising business how-search-works . privacy terms settings";
 }
 
 #advertising {
+    font-size: 14px;
+    color: rgb(105, 105, 105);
     grid-area: advertising;
     justify-self: center;
     align-self: center;
 }
 #business {
+    font-size: 14px;
+    color: rgb(105, 105, 105);
     grid-area: business;
     justify-self: center;
     align-self: center;
 }
 #how-search-works {
+    font-size: 14px;
+    color: rgb(105, 105, 105);
     grid-area: how-search-works;
     justify-self: center;
     align-self: center;
 }
 #privacy {
+    font-size: 14px;
+    color: rgb(105, 105, 105);
     grid-area: privacy;
     justify-self: center;
     align-self: center;
 }
 #terms {
+    font-size: 14px;
+    color: rgb(105, 105, 105);
     grid-area: terms;
     justify-self: center;
     align-self: center;
 }
 #settings {
+    font-size: 14px;
+    color: rgb(105, 105, 105);
     grid-area: settings;
     justify-self: center;
     align-self: center;
